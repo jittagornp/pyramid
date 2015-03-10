@@ -10,7 +10,7 @@ import java.util.Scanner;
 /**
  * @author redcrow
  */
-public class Pyramid {
+public class Example1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
