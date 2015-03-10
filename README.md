@@ -1,6 +1,6 @@
 # Pyramid
 
-- Example1
+<h3>Example1</h3>
 
 ```java
 package com.blogspot.na5cent.pyramid;
