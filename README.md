@@ -56,8 +56,8 @@ public class Example2 {
             System.out.print(deep ? "" : "\n");
             return;
         }
-
         walk(max, ++running, deep);
+
         if (deep) {
             walk(running - 1, 1, false);
         }
