@@ -49,14 +49,11 @@ public class Example2 {
     private static void walk(int max, int running, boolean deep) {
         if (deep) {
             walk(running, 1, false);
-        } else {
-            System.out.print(running + " ");
         }
 
+        System.out.print(deep ? "" : running + " ");
         if (running == max) {
-            if (!deep) {
-                System.out.println("");
-            }
+            System.out.print(deep ? "" : "\n");
             return;
         }
 
@@ -67,7 +64,7 @@ public class Example2 {
     }
 
     public static void main(String[] args) {
-        walk(7, 1, true);
+        walk(5, 1, true);
     }
 }
 ```
@@ -78,12 +75,8 @@ result
 1 2 3 
 1 2 3 4 
 1 2 3 4 5 
-1 2 3 4 5 6 
-1 2 3 4 5 6 7 
-1 2 3 4 5 6 
-1 2 3 4 5 
 1 2 3 4 
 1 2 3 
 1 2 
-1 
+1
 ```
