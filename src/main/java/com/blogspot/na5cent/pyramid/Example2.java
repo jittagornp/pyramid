@@ -15,8 +15,8 @@ public class Example2 {
             System.out.print(deep ? "" : "\n");
             return;
         }
-
         walk(max, ++running, deep);
+
         if (deep) {
             walk(running - 1, 1, false);
         }
@@ -25,5 +25,4 @@ public class Example2 {
     public static void main(String[] args) {
         walk(5, 1, true);
     }
-
 }
