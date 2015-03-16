@@ -6,9 +6,7 @@ package com.blogspot.na5cent.pyramid;
 public class Example2 {
 
     private static void walk(int max, int running, boolean deep) {
-        if (deep) {
-            walk(running, 1, false);
-        }
+        if (deep) walk(running, 1, false);
 
         System.out.print(deep ? "" : running + " ");
         if (running == max) {
@@ -17,9 +15,7 @@ public class Example2 {
         }
         walk(max, ++running, deep);
 
-        if (deep) {
-            walk(running - 1, 1, false);
-        }
+        if (deep) walk(running - 1, 1, false);
     }
 
     public static void main(String[] args) {
